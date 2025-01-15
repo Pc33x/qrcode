@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    QR-code
+{% endblock %}
+
+{% block main %}
+    <h1> QR-code: </h1>
+    <img src="static/qr.png">
+    <form action="/">
+        <input type="submit" value="Go back">
+    </form>
+    <a href="static/qr.png" download="">
+        <button> Download QR-code </button>
+    </a>
+{% endblock %}
