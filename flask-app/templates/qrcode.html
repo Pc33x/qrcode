@@ -1,16 +1,18 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    QR-code
+    QR Code
 {% endblock %}
 
+{% set image = "data:image/png;base64," + img %}
+
 {% block main %}
-    <h1> QR-code: </h1>
-    <img src="static/qr.png">
+    <h1> QR-code </h1>
+    <img src="{{ image }}" alt="QR Code">
     <form action="/">
         <input type="submit" value="Go back">
     </form>
-    <a href="static/qr.png" download="">
-        <button> Download QR-code </button>
+    <a href="{{ image }}" download="qrcode.png">
+        <input type="submit" value="Download">
     </a>
 {% endblock %}
