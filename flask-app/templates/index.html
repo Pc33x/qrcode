@@ -6,8 +6,10 @@
 
 {% block main %}
     <h1> QR-code generator </h1>
-    <form action="/" method="POST">
-        <input type="text" name="user_text" placeholder="Your text hier" autofocus required>
-        <input type="submit" value="Generate a QR-code">
-    </form>
+    <div class="rect">
+        <form action="/" method="POST">
+            <input type="text" name="user_text" placeholder="Text/URL" autofocus required>
+            <input type="submit" value="Generate a QR-code">
+        </form>
+    </div>
 {% endblock %}

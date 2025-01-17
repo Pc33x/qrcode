@@ -9,10 +9,11 @@
 {% block main %}
     <h1> QR-code </h1>
     <img src="{{ image }}" alt="QR Code">
-    <form action="/">
+    <form action="/" class="mg">
         <input type="submit" value="Go back">
     </form>
     <a href="{{ image }}" download="qrcode.png">
         <input type="submit" value="Download">
     </a>
+
 {% endblock %}
